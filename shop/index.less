@@ -1,0 +1,395 @@
+@import url(./clear.less);
+
+// 最外层包裹元素
+
+#wrapper{
+// 头部
+    #header{
+        .headerTop{
+            background-color:#eaeaea;
+            height: 30px;
+          
+            .headerTopMain{
+                width: 1200px;
+                line-height: 30px;
+                margin: 0 auto;
+                
+                // 子元素设置float 父元素高度塌陷
+                .clearfix();
+                .left{
+                    h5{
+                        float: left;
+                        margin-right: 5px;
+                    }
+                    p{
+                        float: left;
+                        a{ margin-left: 5px;
+                            
+                            &:first-child{
+                                border-right: 1px solid #979595;
+                                padding: 0  8px;
+                               
+                            }
+                        }
+                    }
+                }
+                .right{
+                    float: right;
+                    nav{
+                        // a标签是行标签默认有一丢丢小间距
+                        font-size: 0;
+                        a{
+                            border-right: 1px solid #979595;
+                            margin-right: 10px;
+                            padding-right:10px;
+                            font-size: 14px;
+                            &:last-child{
+                                border: none;
+                                margin-right: 0;
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    .headerLow{
+        .headerlowMain{
+            // border: 1px solid red;
+            width: 1200px;
+            margin: 0 auto;
+            .clearfix();
+            .logo{
+                float: left;
+                a{
+                    i{font-size: 45px;
+                        color: coral;
+                        margin: 25px 45px;
+                    }
+                }
+            }
+            .search{
+                float: right;
+                margin-top: 35px;
+                .clearfix();
+                input{
+                    &:first-child{
+                        box-sizing: border-box;
+                        width: 490px;
+                        height: 32px;
+                        padding:0 4px;
+                        border: solid 3px coral;
+                        float: left;
+                    }
+                    &:last-child{
+                        width: 68px;
+                        height: 32px;
+                        background-color: coral;
+                        border: none;
+                        padding:4px;
+                        float: left;
+                        color: white;
+                    }
+                   // placeholder颜色更改
+                &::-webkit-input-placeholder{
+                    color: yellowgreen;
+                }
+
+
+                }
+            }
+        }
+    }
+    
+    }
+// 分类导航开始
+    #navWrap{
+        border-bottom: 2px solid coral;
+        .navWrapMain{
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            .clearfix();
+            a{
+                margin: 0 22px;
+                font-size: 16px;
+                color: #333;
+                float: left;
+                line-height: 50px;
+                &:first-child{
+                    width: 210px;
+                    height: 50px;
+                    background-color: coral;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: bold;
+                    float: left;
+                    text-align: center;
+                    line-height: 50px;
+                }
+
+            }
+        }
+    }
+// 分类导航结束
+//内容区域开始
+    #content{
+    .contentMain{
+    width: 1200px;
+    // border: 1px solid blue;
+    margin: 15px auto 0 auto;
+        #navPath{
+            padding: 9px 15px 9px 0;
+            // 行标签和行标签之间有一丢丢小缝隙
+            font-size: 0;
+            a{
+             font-size: 12px;
+             &:last-child:hover{
+                color:#979595;
+             }
+            }
+           a:hover{
+            color: coral;
+           }
+            i{
+                padding: 0 5px;
+                font-size: 12px;
+            }
+        }
+// 中间区开始
+        #center{
+            margin: 5px 0 15px;
+            // border: 1px solid red;
+            .clearfix();
+            #left{
+                width: 400px;
+                float: left;
+                #leftTop{
+                    width: 400px;
+                    position: relative;
+                    #smallPic{
+                    width: 400px;
+                    height: 400px;
+                    border: 1px solid #dfdfdf;
+                    position: relative;
+                    .mask{
+                        width: 200px;
+                        height: 200px;
+                        background: rgba(255,255, 255, 0.5);
+                        border: 1px solid #ddd;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                    }
+                    #bigPic{
+                        width: 400px;
+                        height: 400px;
+                        border: 1px solid #ddd;
+                        position: absolute;
+                        left: 420px;
+                        top: 0;
+                        overflow: hidden;
+                        img{
+                            width: 800px;
+                            height: 800px;
+                            position:absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+                #leftBottom{ 
+                    width: 400px;
+                    margin-top: 5px;
+                    height: 54px;
+                    // border: 1px solid #ccc;
+                    .clearfix();
+                    a{
+                        width: 10px;
+                        height: 54px;
+                        border: 1px solid  #cccc;
+                        background: #ebebeb;
+                        text-align: center;
+                        line-height: 54px;
+                        float: left;
+                        &:first-child{
+                            margin-right: 4px;
+                        }
+                        float: left;
+                    }
+                    #piclist{
+                        width: 372px;
+                        height: 56px;
+                        float: left;
+                        overflow: hidden;
+                        position: relative;
+                        ul{
+                            white-space:nowrap;
+                            font-size: 0;
+                            position: absolute;
+                            transition: 0.5s;
+                            left:0;
+                            li{
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid #ccc;
+                                padding: 2px;
+                                margin-right: 20px;
+                                display: inline-block;
+                                img{
+                                    width: 50px;
+                                    height: 50px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                        float: left;
+                    }
+                }
+            }
+           #right{
+            width: 700px;
+            float: right;
+            .rightTop{
+                h3{
+                    font-size: 14px;
+                    line-height: 21px;
+                    margin-top: 15px;
+                }
+                >p{
+                    color:#e12228;
+                    margin-top: 15px;
+                }
+                .pricewrap{
+                    margin-top: 10px;
+                    line-height: 28px;
+                    background: #fee9ec;
+                    padding: 7px;
+                    // border: 1px solid red;
+                    .pricetop{
+                        .clearfix();
+                        >span{
+                            margin-right: 15px;
+                            float: left;
+                        }
+                        .price{
+                            // border: 1px solid red;
+                            float: left;
+                            .clearfix();
+                           > span{
+                                font-size: 16px;
+                                float: left;
+                            }
+                            > p{
+                                font-size: 24px;
+                                float: left;
+                                color: #cc1122;
+                                font-weight: bold;
+                            }
+                            i{
+                                font-size: 12px;
+                                color: #e12228;
+                                float: left;
+                            }
+                        }
+                   // 累积评价
+                        p{
+                            float: right;
+                            span{}
+
+                        }
+                    }
+                    .pricebottom{
+                        .clearfix();
+                        // 促销
+                        > span{
+                            float: left;
+                            margin-right: 15px;
+                        }
+                        // 加价购
+                        > p{
+                            // width: 520px;
+                            line-height: 28px;
+                            float: left;
+                            // border: 2px solid red;
+                            >span{
+                                color:#999;
+                                float: left;
+                                font-size: 12px;
+                                float: left;
+                                // 加价购
+                                &:first-child{
+                                    background: #c81623;
+                                    padding:3px;
+                                    color: #ffff;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .support{
+                    font-size: 12px;
+                    margin-top: 10px;
+                    line-height: 28px;
+                    .clearfix();
+                   > span{
+                        margin-right: 15px;
+                        float: left;
+                    }
+                   > p{
+                        float: left;
+                        color:#999;
+                        font-size: 12px;
+                    }
+                }
+                .address{
+                    font-size: 12px;
+                    border-bottom:1px solid #ededee;
+                    padding-bottom: 5px;
+                    line-height: 28px;
+                    margin-top: 10px;
+                    .clearfix();
+                    >span{
+                        margin-right: 15px;
+                        float: left;
+                    }
+                    >p{
+                        float: left;
+                    }
+                }
+            }
+            .rightBottom{
+                .chooseWrap{
+                    margin-top: 10px;
+                    line-height: 28px;
+                    dl{
+                    margin: 13px 0;
+                    .clearfix();
+                        dt{
+                            margin-right: 15px;
+                            float: left;
+                        }
+                        dd{
+                            margin-right: 5px;
+                            line-height: 24px;
+                            padding: 2px 24px;
+                            color: #666;
+                            border-top:1px solid #eee;
+                            border-left: 1px solid #eee;
+                            border-right:1px solid #bbb;
+                            border-bottom:1px solid #bbb;
+                            float: left;
+                        }
+                    }
+                }
+            }
+           }
+        }
+    }
+    }
+//内容区域结束
+
+}

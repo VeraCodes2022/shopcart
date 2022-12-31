@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://kit.fontawesome.com/2f0b293b5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!-- 头部开始-->
+        <header id="header">
+            <!-- 上部分 -->
+            <div class="headerTop">
+                <!-- 上部分版心 -->
+                <div class="headerTopMain">
+                    <!-- 左侧 -->
+                    <div class="left">
+                        <h5>欢迎来到商优选！请</h5>
+                        <p>
+                            <a href="javascript:;">登录</a>
+                            <a href="javascript:;">注册</a>
+                        </p>
+                    </div>
+                    <!-- 右侧 -->
+                    <div class="right">
+                        <nav>
+                            <!--javascript:;禁止超链接跳转 -->
+                            <a href="javascript:;">我的订单</a>
+                            <a href="javascript:;">我的购物车</a>
+                            <a href="javascript:;">我的尚优选</a>
+                            <a href="javascript:;">企业采购</a>
+                            <a href="javascript:;">关注尚优选</a>
+                            <a href="javascript:;">合作招商</a>
+                            <a href="javascript:;">商家后台</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- 下部分 -->
+            <div class="headerLow">
+                <!-- 版心 -->
+                <div class="headerlowMain">
+                    <!-- 左侧logo -->
+                    <div class="logo">
+                        <a href="javascript:;">
+                            <i class="fa fa-stumbleupon"></i>
+                        </a>
+                    </div>
+                    <!-- 右侧搜索框 -->
+                    <div class="search" >
+                        <input  type="text"   placeholder="请输入搜索内容"/>
+                        <input type="submit" value="搜索"/>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 分类导航栏 -->
+        <div id="navWrap">
+            <div class="navWrapMain">
+                <a href="javascript:;">全部商品分类</a>
+                <a href="javascript:;">服装城</a>
+                <a href="javascript:;">美妆馆</a>
+                <a href="javascript:;">尚优选超市</a>
+                <a href="javascript:;">全球购</a>
+                <a href="javascript:;">闪购</a>
+                <a href="javascript:;">团购</a>
+                <a href="javascript:;">有趣</a>
+                <a href="javascript:;">秒杀</a>
+
+            </div>
+        </div>
+        <!-- 内容区域 -->
+        <div id="content">
+            <div class="contentMain">
+                <!-- 路径导航 -->
+                <div id="navPath"></div>
+                <!-- 放大镜效果开始 -->
+                <div id="center">
+                    <!-- 左侧放大镜 -->
+                    <div id="left">
+                        <!-- 上面大图 -->
+                        <div id="leftTop">
+                            <!-- 小图框 -->
+                            <div id="smallPic">
+                                <!-- 小图片 -->
+                                <img src="./images/s1.png" alt=""/>
+                            </div>
+                        </div>
+                       <!-- 下面缩略图 -->
+                        <div id="leftBottom">
+                            <a href="javascript:;"><</a>
+                            <div id="piclist">
+                                <ul>
+                                    <!-- 动态渲染图片 -->
+                                </ul>
+                            </div>
+                            <a href="javascript:;">></a>
+                        </div>
+                    </div>
+                   <!-- 右侧 -->
+                    <div id="right">
+                        <!--右上半部分商品详情数据开始-->
+                        <div class="rightTop"></div>
+                        <!--右上半部分商品详情数据结束-->
+                        <!--右下半部分商品参数选择开始-->
+                        <div class="rightBottom">
+                            <div class="chooseWrap"></div>
+                            <!-- 商品参数选择区结束 -->
+                            <!-- 加入购物车开始 -->
+                            <div class="shopCart">
+
+                            </div>
+                            <!-- 加入购物车开始 -->
+                        </div>
+                        <!--右下半部分商品参数数据结束-->
+                    </div>
+                </div>
+                <!-- 放大镜效果结束 -->
+            </div>
+        </div>
+
+    </div>
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

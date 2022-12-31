@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+  
+  html{
+    overflow: scroll;
+  }
+  
+  h1{font-size: 18px;}
+  h2{font-size: 16px;}
+  h3{font-size: 14px;}
+  h4, h5, h6{font-size: 100%}
+  
+  small{font-size: 12px;}
+  
+  address,em,i,cite,dfn,var {
+    font-style: normal;
+  }
+  
+  code,kbd,pre,samp,tt{font-family: 'Courier New', Courier, monospace;}
+  
+  a{
+    color: #979595;
+    font-size: 12px;
+  }
+  
+  a:link:hover{
+    color: coral !important;
+  }
+  
+  table{
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  button,input,select,textarea{
+    font-size: 100%;
+  }
+  
+  hr{
+    border: none;
+    height: 1px;
+  }
+  
+  
+  input{outline: none;}
+  
+  img{
+    display: block;
+  }
+  
+  #wrapper #header .headerTop {
+    background-color: #eaeaea;
+  }
+  
+
